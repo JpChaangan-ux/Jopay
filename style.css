@@ -1,0 +1,459 @@
+/* SHOPAY website styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f7f5;
+    color: #202820;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #e4e8e2;
+}
+
+.nav {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #246b4b;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #39443c;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover, nav a.active {
+    color: #218052;
+}
+
+.nav-button {
+    justify-self: end;
+    background: #246b4b;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.12;
+    margin: 12px 0;
+}
+
+.hero h1 span, .page-title span {
+    color: #246b4b;
+}
+
+.hero p, .page-intro {
+    color: #657067;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.hero img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.button {
+    display: inline-block;
+    background: #246b4b;
+    color: white;
+    text-decoration: none;
+    padding: 13px 19px;
+    border-radius: 7px;
+    margin: 10px 8px 0 0;
+}
+
+.button.secondary {
+    background: white;
+    color: #246b4b;
+    border: 1px solid #cbd8ce;
+}
+
+.section {
+    padding: 55px 0;
+}
+
+.section.light {
+    background: #eaf0e9;
+}
+
+.section-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.section-heading h2, .page-title {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #657067;
+    line-height: 1.6;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.category {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: white;
+}
+
+.category img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.category h3 {
+    padding: 0 18px 12px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #e4e8e2;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #e9ede7;
+}
+
+.product-info {
+    padding: 16px;
+}
+
+.product-info small {
+    color: #778178;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-info h3 {
+    margin: 8px 0;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #246b4b;
+    font-weight: bold;
+}
+
+.add-button {
+    display: inline-block;
+    background: #e1f1a8;
+    color: #20392a;
+    padding: 7px 11px;
+    border-radius: 50%;
+}
+
+.banner {
+    background: #246b4b;
+    color: white;
+    border-radius: 14px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.banner p {
+    color: #e1e9e3;
+    line-height: 1.6;
+}
+
+.banner .button {
+    justify-self: end;
+    background: #e1f1a8;
+    color: #20392a;
+}
+
+.page-top {
+    padding: 55px 0 25px;
+}
+
+.page-intro {
+    max-width: 680px;
+}
+
+.about-grid, .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.about-grid p, .value p {
+    color: #657067;
+    line-height: 1.7;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.stat {
+    background: white;
+    border: 1px solid #e4e8e2;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.stat strong {
+    display: block;
+    color: #246b4b;
+    font-size: 25px;
+}
+
+.stat span {
+    font-size: 13px;
+    color: #657067;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.value {
+    padding: 24px;
+    background: white;
+    border: 1px solid #e4e8e2;
+    border-radius: 12px;
+}
+
+.contact-box, .contact-form {
+    background: white;
+    border: 1px solid #e4e8e2;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.contact-box {
+    background: #246b4b;
+    color: white;
+}
+
+.contact-box p {
+    color: #e1e9e3;
+    line-height: 1.6;
+}
+
+.contact-detail {
+    border-top: 1px solid #628b75;
+    padding: 14px 0;
+}
+
+.contact-detail strong {
+    display: block;
+    color: #e1f1a8;
+    margin-bottom: 5px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin: 14px 0 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6ded6;
+    border-radius: 7px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+footer {
+    background: #17291f;
+    color: white;
+    padding: 28px 0;
+    margin-top: 45px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+footer p {
+    color: #c7d3ca;
+    margin-bottom: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    .nav {
+        grid-template-columns: 1fr auto;
+    }
+    nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        flex-wrap: wrap;
+    }
+    .hero, .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    .banner .button {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+    .category-grid, .product-grid, .value-grid, .stats-grid,
+    .section-heading, .form-grid, .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero img {
+        height: 280px;
+    }
+    .product img {
+        height: 250px;
+    }
+    .footer-links {
+        justify-content: start;
+    }
+}
+
+/* Keep the original SHOPAY form appearance when Bootstrap is loaded. */
+.contact-form .form-control {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: #202820;
+    background-color: white;
+    border: 1px solid #d6ded6;
+    border-radius: 7px;
+    font: inherit;
+    box-shadow: none;
+}
+.contact-form .form-control:focus {
+    border-color: #a7c8b3;
+    box-shadow: none;
+}
+.contact-form .form-label {
+    display: block;
+    margin: 14px 0 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.contact-form .btn.button {
+    border: none;
+    font: inherit;
+    box-shadow: none;
+}
